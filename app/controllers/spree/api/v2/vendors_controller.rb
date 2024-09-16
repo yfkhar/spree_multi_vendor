@@ -1,7 +1,7 @@
 module Spree
   module Api
-    module V1
-      class VendorsController < Spree::Api::V1::BaseController
+    module V2
+      class VendorsController < Spree::Api::V2::BaseController
         def index
           @vendors = if params[:ids].present?
                        scope.where(id: params[:ids].split(','))

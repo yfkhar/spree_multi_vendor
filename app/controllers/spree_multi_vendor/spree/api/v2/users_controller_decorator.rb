@@ -1,4 +1,4 @@
-module SpreeMultiVendor::Spree::Api::V1::UsersControllerDecorator
+module SpreeMultiVendor::Spree::Api::V2::UsersControllerDecorator
   private
 
   def user_params
@@ -10,4 +10,4 @@ module SpreeMultiVendor::Spree::Api::V1::UsersControllerDecorator
   end
 end
 
-Spree::Api::V1::UsersController.prepend SpreeMultiVendor::Spree::Api::V1::UsersControllerDecorator if SpreeMultiVendor::Engine.api_v1_available?
+Spree::Api::V2::UsersController.prepend SpreeMultiVendor::Spree::Api::V2::UsersControllerDecorator if SpreeMultiVendor::Engine.api_v1_available?
